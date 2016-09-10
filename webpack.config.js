@@ -1,3 +1,5 @@
+var path = require('path')
+var webpack = require('webpack')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 var HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
   template: __dirname + '/app/index.html',
@@ -18,7 +20,7 @@ module.exports = {
   module: {
     loaders: [
       {
-        test: /\.js$/, exclude: /node_modules/,
+        test: /\.js?$/, exclude: /node_modules/,
         loaders: ['babel-loader']
       },
       {
