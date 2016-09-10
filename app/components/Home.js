@@ -1,6 +1,6 @@
 // import React, { Component, PropTypes } from 'react';
 
-// class Main extends Component {
+// class Home extends Component {
 //     // static propTypes = {
 //     //     className: PropTypes.string
 //     // };
@@ -11,27 +11,21 @@
 
 //     render() {
 //         return (
-//             {this.props.children}
+//           <div>Home now bitches!</div>
 //         );
 //     }
 // }
 
-// export default Main;
-
+// export default Home;
 import React from 'react';
 
-export default class Main extends React.Component {
-  // static propTypes = {
-  //   name: React.PropTypes.string,
-  // };
+export default class Home extends React.Component {
 
-  // constructor(props) {
-  //   super(props);
-  // }
 
   render() {
     return (
-      <div>{this.props.children}</div>
+      <div>Home sweet home!</div>
     );
   }
 }
+

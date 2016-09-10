@@ -1,19 +1,13 @@
-import React, { Component, PropTypes } from 'react';
+import React from 'react';
+import { Router, Route, DefaultRoute, hashHistory} from 'react-router';
+import Main from '../app/components/Main';
+import Home from '../app/components/Home';
 
-class Component extends Component {
-    static propTypes = {
-        className: PropTypes.string,
-    };
 
-    constructor(props) {
-        super(props);
-    }
-
-    render() {
-        return (
-
-        );
-    }
-}
-
-export default Component;
+export default (
+    <Router history={hashHistory}>
+        <Route path='/' handler={Main}>
+            <DefaultRoute handler={Home} />
+        </Route>
+    </Router>
+    );
