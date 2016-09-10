@@ -24,7 +24,7 @@ export default class Home extends React.Component {
 
   render() {
     return (
-      <div>Home sweet home!</div>
+      <h1>Home sweet home!</h1>
     );
   }
 }
