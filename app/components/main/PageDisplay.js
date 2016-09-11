@@ -59,6 +59,65 @@ export default class PageDisplay extends React.Component {
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'contain'
         }}>
+          <p style={{
+            top: '-25px',
+            left: '78px',
+            display: 'inline',
+            position: 'relative',
+            fontFamily: '"Raleway", sans-serif'
+          }}>WEDDING PARTY</p>
+          <p style={{
+            top: '-25px',
+            left: '275px',
+            display: 'inline',
+            position: 'relative',
+            fontFamily: '"Raleway", sans-serif'
+          }}>GUESTS</p>
+          <p style={{
+            top: '145px',
+            right: '230px',
+            display: 'inline',
+            position: 'relative',
+            fontFamily: '"Raleway", sans-serif'
+          }}>DETAILS</p>
+          <p style={{
+            top: '145px',
+            left: '330px',
+            display: 'inline',
+            position: 'relative',
+            fontFamily: '"Raleway", sans-serif'
+          }}>LOCATION</p>
+          <p style={{
+            top: '495px',
+            right: '55px',
+            display: 'inline',
+            position: 'relative',
+            fontFamily: '"Raleway", sans-serif'
+          }}>VENDORS</p>
+          <p style={{
+            top: '245px',
+            left: '330px',
+            display: 'inline',
+            position: 'absolute',
+            fontFamily: '"Raleway", sans-serif',
+            fontSize: '2em'
+          }}>ALYSSA</p>
+          <p style={{
+            top: '285px',
+            left: '370px',
+            display: 'inline',
+            position: 'absolute',
+            fontFamily: '"Raleway", sans-serif',
+            fontSize: '2em'
+          }}>&</p>
+          <p style={{
+            top: '325px',
+            left: '350px',
+            display: 'inline',
+            position: 'absolute',
+            fontFamily: '"Raleway", sans-serif',
+            fontSize: '2em'
+          }}>DAN</p>
           <img src='../../app/images/commandIcon.png' alt="Watson Command Icon"
             style={{
               width: '10%',
