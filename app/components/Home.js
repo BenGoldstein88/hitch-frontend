@@ -8,14 +8,20 @@ export default class Home extends React.Component {
     super(props);
     this.state = {
     	tool: 'home',
-    	event: 'wedding'
+    	event: 'wedding',
+      display: 'home'
 
     };
     this.handleToolChange = this.handleToolChange.bind(this)
     this.handleEventChange = this.handleEventChange.bind(this)
-
+    this.handleDisplayChange = this.handleDisplayChange.bind(this)
   }
 
+  handleDisplayChange(display) {
+    this.setState({
+      display: display
+    })
+  }
   handleEventChange(eventName) {
   	this.setState({
   		event: eventName
@@ -38,7 +44,7 @@ export default class Home extends React.Component {
         backgroundSize: '101% 100%'
         }}>
       </div>
-	    <AppMain onToolChange={this.handleToolChange} tool={this.state.tool} onEventChange={this.handleEventChange} event={this.state.event} />
+	    <AppMain onDisplayChange={this.handleDisplayChange} display={this.state.display} onToolChange={this.handleToolChange} tool={this.state.tool} onEventChange={this.handleEventChange} event={this.state.event} />
       </div>
     );
   }

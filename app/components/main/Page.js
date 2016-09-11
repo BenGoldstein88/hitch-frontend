@@ -9,7 +9,7 @@ export default class Page extends React.Component {
     return (
       <div>
         <SideBarDisplay />
-        <PageDisplay />
+        <PageDisplay display={this.props.display} onDisplayChange={this.props.onDisplayChange} onToolChange={this.props.onToolChange} tool={this.props.tool} onEventChange={this.props.onEventChange} event={this.props.event}/>
       </div>
     );
   }
