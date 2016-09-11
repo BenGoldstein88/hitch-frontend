@@ -9,12 +9,8 @@ export default class Home extends React.Component {
     this.state = {
     	tool: 'home',
     	event: 'wedding',
-<<<<<<< HEAD
-      display: 'home'
-
-=======
+      display: 'home',
       pay: false
->>>>>>> 709ee9fd74a17b552b501573c0b003be58841093
     };
     this.handleToolChange = this.handleToolChange.bind(this)
     this.handleEventChange = this.handleEventChange.bind(this)
