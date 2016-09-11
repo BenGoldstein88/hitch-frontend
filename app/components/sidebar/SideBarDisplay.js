@@ -8,9 +8,9 @@ export default class SideBarDisplay extends React.Component {
   render() {
     return (
       <div className={styles.sideBar.verticalAlign}>
-        <SiteMapIcon />
-        <RemindersBox />
-        <SuggestionsBox />
+        // <SiteMapIcon />
+        // <RemindersBox />
+        // <SuggestionsBox />
       </div>
     );
   }
