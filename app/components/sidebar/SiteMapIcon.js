@@ -6,10 +6,11 @@ export default class SiteMapIcon extends React.Component {
       <div style={{
       	// border: '1px red solid',
       	height: '33.3%',
-        width: '250px',
+        // width: '250px',
       	marginTop: '.5%',
+        backgroundRepeat: 'no-repeat',
         backgroundImage: 'url("../../app/images/miniDiamond.png")',
-        backgroundSize: '100% 100%'
+        backgroundSize: 'contain'
       }}>
       </div>
     );

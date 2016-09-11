@@ -7,9 +7,10 @@ export default class SuggestionsBox extends React.Component {
       <div style={{
       	// border: '1px blue solid',
       	height: '33.3%',
-        width: '250px',
+        // width: '250px',
+        backgroundRepeat: 'no-repeat',
         backgroundImage: 'url("../../app/images/suggestionbox.png")',
-        backgroundSize: '100% 100%'
+        backgroundSize: 'contain'
       }}>
       </div>
 
