@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 import Main from '../app/components/Main';
@@ -11,3 +12,4 @@ export default (
         </Route>
     </Router>
     );
+

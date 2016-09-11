@@ -20,11 +20,19 @@ export default class RemindersBox extends React.Component {
     this.setState({value: event.target.value});
   }
   render() {
-    <select value={this.state.value} onChange={this.onChange}>
-      <option value='task1'>ASK FOR NEW PROPOSAL</option>
-      <option value='task2'>LOOK UP FLIGHTS</option>
-      <option value='task2'>LOOK UP FLIGHTS</option>
-      <option value='task2'>LOOK UP FLIGHTS</option>
-    </select>
+    return (
+      <div style={{
+        border: '1px green solid',
+        height: '33.3%'
+      }}>
+        <select value={this.state.value} onChange={this.onChange}>
+          <option value='task1'>ASK FOR NEW PROPOSAL</option>
+          <option value='task2'>LOOK UP FLIGHTS</option>
+          <option value='task2'>LOOK UP FLIGHTS</option>
+          <option value='task2'>LOOK UP FLIGHTS</option>
+        </select>
+    </div>
+
+    );
   }
 }
