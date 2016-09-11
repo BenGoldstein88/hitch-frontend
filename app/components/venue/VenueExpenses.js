@@ -13,7 +13,7 @@ export default class VenueExpenses extends React.Component {
         height: '50%',
         fontFamily: 'Raleway'
       }}>
-      	<h2 style={{fontFamily: 'Raleway'}}> EXPENSES: </h2>
+      	<h2 style={{fontFamily: 'Raleway', fontSize:'16px'}}> EXPENSES: </h2>
       	<ExpenseItem />
         <ExpenseItem />
         <RentalItem />

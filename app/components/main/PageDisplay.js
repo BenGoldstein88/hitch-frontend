@@ -149,7 +149,8 @@ export default class PageDisplay extends React.Component {
     } else {
       return (
         <div className={styles.page.verticalAlign} style={{
-          height: '73vh'
+          height: '73vh',
+          marginLeft: '-25px'
         }}>
           <PageDisplayVenue />
         </div>
