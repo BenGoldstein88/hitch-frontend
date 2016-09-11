@@ -18,10 +18,11 @@
     "jquery": "^3.1.0",
     "react": "^15.3.1",
     "react-addons-css-transition-group": "^15.1.0",
-    "style-loader": "^0.13.1",
     "react-bootstrap": "^0.30.3",
     "react-dom": "^15.3.1",
     "react-router": "^2.7.0",
+    "react-typist": "^0.3.0",
+    "style-loader": "^0.13.1",
     "webpack": "^1.13.2"
   },
   "devDependencies": {
