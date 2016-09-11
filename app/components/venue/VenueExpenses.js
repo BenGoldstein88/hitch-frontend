@@ -85,13 +85,16 @@ export default class VenueExpenses extends React.Component {
       <div style={{
       	display: 'block',
       	width: '100%',
-        height: '50%'
+        height: '50%',
+        fontFamily: 'Raleway'
       }}>
-      	<h2> Expenses: </h2> 
-      	<ExpenseItem item={this.state.item1} price={this.state.price1} quantity={this.state.quantity1} total={this.state.total1}/>
+      	<h2 style={{fontFamily: 'Raleway'}}> EXPENSES: </h2>
+        <ExpenseItem item={this.state.item1} price={this.state.price1} quantity={this.state.quantity1} total={this.state.total1}/>
         <ExpenseItem item={this.state.item2} price={this.state.price2} quantity={this.state.quantity2} total={this.state.total2}/>
         <RentalItem price={this.state.rentalFee}/>
         <VenueExpensesFooter total={this.state.grandTotal}/>
+
+
       </div>
     );
   }

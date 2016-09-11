@@ -60,14 +60,15 @@ export default class VenueContactInfo extends React.Component {
       <div style={{
       	display: 'block',
       	width: '100%',
-        height: '40%'
+        height: '40%',
+        fontFamily: 'Raleway'
       }}>
-      	<h2>Contact Info: </h2>
-        <input onChange={this.handleNameChange}value={this.state.name}type='text' style={{backgroundColor: 'pink', width: '75%', marginRight: '20%',
+      	<h2 style={{fontFamily: 'Raleway'}}>CONTACT INFO: </h2>
+        <input onChange={this.handleNameChange}value={this.state.name}type='text' style={{background: 'rgba(254, 149, 125, 0.2)', width: '75%', marginRight: '20%',
         marginLeft: '10%'}} />
-        <input onChange={this.handleNumberChange}value={this.state.number}type='text' style={{backgroundColor: 'pink', width: '75%', marginRight: '20%',
+        <input onChange={this.handleNumberChange}value={this.state.number}type='text' style={{background: 'rgba(254, 149, 125, 0.2)', width: '75%', marginRight: '20%',
         marginLeft: '10%'}} />
-        <input onChange={this.handleEmailChange}value={this.state.email}type='text' style={{backgroundColor: 'pink', width: '85%',
+        <input onChange={this.handleEmailChange}value={this.state.email}type='text' style={{background: 'rgba(254, 149, 125, 0.2)', width: '85%',
         marginLeft: '10%'}} />
       </div>
     );
