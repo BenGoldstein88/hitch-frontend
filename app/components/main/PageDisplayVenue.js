@@ -17,5 +17,4 @@ export default class PageDisplayVenue extends React.Component {
     );
   }
 }
-      	// <VenueRightColumn />
-      	// <VenueFooter />
+
