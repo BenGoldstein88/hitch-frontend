@@ -63,13 +63,12 @@ export default class VenueContactInfo extends React.Component {
         height: '40%',
         fontFamily: 'Raleway'
       }}>
-      	<h2 style={{fontFamily: 'Raleway'}}>CONTACT INFO: </h2>
-        <input onChange={this.handleNameChange}value={this.state.name}type='text' style={{background: 'rgba(254, 149, 125, 0.2)', width: '75%', marginRight: '20%',
-        marginLeft: '10%'}} />
-        <input onChange={this.handleNumberChange}value={this.state.number}type='text' style={{background: 'rgba(254, 149, 125, 0.2)', width: '75%', marginRight: '20%',
-        marginLeft: '10%'}} />
-        <input onChange={this.handleEmailChange}value={this.state.email}type='text' style={{background: 'rgba(254, 149, 125, 0.2)', width: '85%',
-        marginLeft: '10%'}} />
+      	<h2 style={{fontFamily: 'Raleway', fontSize:'16px'}}>CONTACT INFO: </h2>
+        <input onChange={this.handleNameChange}value={this.state.name}type='text' style={{background: 'rgba(254, 149, 125, 0.2)', width: '75%', marginRight: '20%', marginBottom: '10px', paddingLeft: '10px'
+        }} />
+        <input onChange={this.handleNumberChange}value={this.state.number}type='text' style={{background: 'rgba(254, 149, 125, 0.2)', width: '75%', marginRight: '20%', marginBottom: '10px', paddingLeft: '10px'}} />
+        <input onChange={this.handleEmailChange}value={this.state.email}type='text' style={{background: 'rgba(254, 149, 125, 0.2)', width: '85%', paddingLeft: '10px'
+          }} />
       </div>
     );
   }
