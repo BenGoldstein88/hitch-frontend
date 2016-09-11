@@ -6,10 +6,16 @@ export default class VenueExpensesFooter extends React.Component {
 		this.state = {
 			pay: this.props.pay
 		}
+		this.handleDoubleClick = this.handleDoubleClick.bind(this)
+		this.handleButtonClick = this.handleButtonClick.bind(this)
 	}
 
 	handleDoubleClick(e) {
 		this.props.onPayChange()
+	}
+
+	handleButtonClick(e) {
+		alert('You have successfully paid a $11,000 deposit to the WESTIN ST. FRANCIS! Your next payment of $10,000 is due by 17 January 2017.')
 	}
 
 	enableButton() {
@@ -23,7 +29,7 @@ export default class VenueExpensesFooter extends React.Component {
   render() {
   	let payButton;
   	if (this.props.pay) {
-			payButton = <Button style={{float: 'left', marginBottom: '2%', width: '22.5%'}} bsStyle='success'>Pay</Button>
+			payButton = <Button onClick={this.handleButtonClick}style={{float: 'left', marginBottom: '2%', width: '22.5%'}} bsStyle='success'>Pay</Button>
 		} else {
 			payButton = <Button style={{float: 'left', marginBottom: '2%', width: '22.5%'}} bsStyle='default' disabled>Pay</Button>
 		}
