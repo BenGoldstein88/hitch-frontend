@@ -10,7 +10,9 @@ export default class VenueFooter extends React.Component {
       <div style={{
       	height: '12.5%',
       	width: '100%',
-        float: 'bottom'
+        float: 'bottom',
+        position: 'absolute',
+        bottom: '-86px'
       }}>
       	<PdfButton />
       	<WatsonButton />

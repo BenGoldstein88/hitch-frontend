@@ -9,8 +9,12 @@ export default class Home extends React.Component {
     this.state = {
     	tool: 'home',
     	event: 'wedding',
+<<<<<<< HEAD
       display: 'home'
 
+=======
+      pay: false
+>>>>>>> 709ee9fd74a17b552b501573c0b003be58841093
     };
     this.handleToolChange = this.handleToolChange.bind(this)
     this.handleEventChange = this.handleEventChange.bind(this)
@@ -34,6 +38,12 @@ export default class Home extends React.Component {
   	})
   }
 
+  handlePayChange() {
+    this.setState({
+      pay: true
+    })
+  }
+
   render() {
     return (
       <div>
@@ -44,7 +54,11 @@ export default class Home extends React.Component {
         backgroundSize: '101% 100%'
         }}>
       </div>
+<<<<<<< HEAD
 	    <AppMain onDisplayChange={this.handleDisplayChange} display={this.state.display} onToolChange={this.handleToolChange} tool={this.state.tool} onEventChange={this.handleEventChange} event={this.state.event} />
+=======
+	    <AppMain onToolChange={this.handleToolChange} tool={this.state.tool} onEventChange={this.handleEventChange} event={this.state.event} onPayChange={this.handlePayChange} pay={this.state.pay} />
+>>>>>>> 709ee9fd74a17b552b501573c0b003be58841093
       </div>
     );
   }

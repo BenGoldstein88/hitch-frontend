@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from '../../styles/indexStyles';
 
 export default class VenueHeader extends React.Component {
   constructor(props) {
@@ -44,24 +45,28 @@ export default class VenueHeader extends React.Component {
   }
   render() {
     return (
-      <div style={{
+      <div className={styles.venueTop.textAlign}
+        style={{
       	height: '12.5%',
       	width: '100%',
-        fontFamily: 'Raleway'
+        fontFamily: 'Raleway',
+        paddingLeft: '250px',
+        marginTop: '20px'
       }}>
       	<input value={this.state.name}type='text' onChange={this.handleNameChange} style={{
       		background: 'transparent',
       		border: 'none',
       		display: 'block',
-      		margin: 'auto',
-          width: '50%'
+          width: '50%',
+          fontSize: '20px',
+          paddingLeft: '40px'
       	}} />
       	<input value={this.state.address}type='text' onChange={this.handleAddressChange}style={{
       		background: 'transparent',
       		border: 'none',
       		display: 'block',
-      		margin: 'auto',
-          width: '70%'
+          width: '70%',
+          fontSize: '16px'
       	}} />
       </div>
     );
