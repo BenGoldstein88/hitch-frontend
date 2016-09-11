@@ -8,8 +8,8 @@ export default class Home extends React.Component {
     super(props);
     this.state = {
     	tool: 'home',
-    	event: 'wedding'
-
+    	event: 'wedding',
+      pay: false
     };
     this.handleToolChange = this.handleToolChange.bind(this)
     this.handleEventChange = this.handleEventChange.bind(this)
@@ -28,6 +28,12 @@ export default class Home extends React.Component {
   	})
   }
 
+  handlePayChange() {
+    this.setState({
+      pay: true
+    })
+  }
+
   render() {
     return (
       <div>
@@ -38,7 +44,7 @@ export default class Home extends React.Component {
         backgroundSize: '101% 100%'
         }}>
       </div>
-	    <AppMain onToolChange={this.handleToolChange} tool={this.state.tool} onEventChange={this.handleEventChange} event={this.state.event} />
+	    <AppMain onToolChange={this.handleToolChange} tool={this.state.tool} onEventChange={this.handleEventChange} event={this.state.event} onPayChange={this.handlePayChange} pay={this.state.pay} />
       </div>
     );
   }

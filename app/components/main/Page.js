@@ -9,7 +9,7 @@ export default class Page extends React.Component {
     return (
       <div>
         <SideBarDisplay />
-        <PageDisplay />
+        <PageDisplay onPayChange={this.props.onHandlePayChange} pay={this.props.pay}/>
       </div>
     );
   }

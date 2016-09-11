@@ -17,7 +17,7 @@ export default class VenueExpenses extends React.Component {
       	<ExpenseItem />
         <ExpenseItem />
         <RentalItem />
-        <VenueExpensesFooter />
+        <VenueExpensesFooter onPayChange={this.props.onHandlePayChange} pay={this.props.pay} />
       </div>
     );
   }

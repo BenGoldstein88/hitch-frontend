@@ -79,7 +79,7 @@ export default class PageDisplayVenue extends React.Component {
       <div style={{height: '100%', width: '100%'}}>
       	<VenueHeader venueName={pdfMap.venueName} venueAddress={pdfMap.venueAddress}/>
       	<VenueLeftColumn contactName={pdfMap.contactName} contactNumber={pdfMap.contactNumber} watsonText={pdfMap.watsonText}/>
-        <VenueRightColumn mealPackagePrice={pdfMap.mealPackagePrice} mealPackageQuantity={pdfMap.mealPackageQuantity} valetParkingPrice={pdfMap.valetParkingPrice} valetParkingQuantity={pdfMap.valetParkingQuantity} venueRentalFee={pdfMap.venueRentalFee}/>
+        <VenueRightColumn onPayChange={this.props.onHandlePayChange} pay={this.props.pay} mealPackagePrice={pdfMap.mealPackagePrice} mealPackageQuantity={pdfMap.mealPackageQuantity} valetParkingPrice={pdfMap.valetParkingPrice} valetParkingQuantity={pdfMap.valetParkingQuantity} venueRentalFee={pdfMap.venueRentalFee}/>
         <VenueFooter />
       </div>
     );

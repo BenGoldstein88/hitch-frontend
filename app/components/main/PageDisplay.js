@@ -151,7 +151,7 @@ export default class PageDisplay extends React.Component {
         <div className={styles.page.verticalAlign} style={{
           height: '73vh'
         }}>
-          <PageDisplayVenue />
+          <PageDisplayVenue onPayChange={this.props.onHandlePayChange} pay={this.props.pay}/>
         </div>
       );
     }
