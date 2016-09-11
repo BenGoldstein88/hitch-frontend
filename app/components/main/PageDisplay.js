@@ -2,7 +2,7 @@ import React from 'react';
 import styles from '../../styles/indexStyles'
 // import FileUploadForm from '../venue/FileUploadForm'
 import Typist from 'react-typist';
-
+import PageDisplayVenue from './PageDisplayVenue'
 export default class PageDisplay extends React.Component {
   render() {
   	var watsonJSON = { "source_document_id": "", "timestamp": "2016-09-11T07:12:36.453Z", "media_type_detected": "application/pdf", "metadata": [ { "name": "publicationdate", "content": "2016-09-10" } ], "answer_units": [ { "id": "d46466aa-7dc6-4469-8ff0-501f598c5e24", "type": "body", "parent_id": "", "title": "no-title", "direction": "ltr", "content": [ { "media_type": "text/plain", "text": "Name : WEST IN ST. FRANC IS Address : 335 Powel l S t , San Franc isco , CA 94102 Contact Name : Lauren Schardt Contact Number : (412) 397-­‐‑7000 Proposal : Wedding Date: 08/01/17 Guest Count: 100 Package Choice: Imperial Package includes: Venue Rental 8 hours Imperial Tasting Menu Champagne Toast Complimentary room for the Couple Initial Deposit: $17,000 2nd Payment due by Jan 1, 2017 $10,000 Final Payment due by Aug 1, 2017 $10,000 Cancellation Fee is 50% within 160 days No outside caterers allowed Expenses : 1. Meal Package: $200 @ 100 2. Valet Parking $20 @ 100 3. Venue Rental Fee: $5000 Notes : " } ] } ], "warnings": [ { "phase": "answer_units", "warning_id": "no_selector_tag_match", "description": "Only one answer unit was produced because none of the selector_tags [h1, h2, h3, h4, h5, h6] matched against the document." } ] }
@@ -49,9 +49,15 @@ export default class PageDisplay extends React.Component {
 
 
     return (
-      <div className={styles.page.verticalAlign} style={{
+        <div className={styles.page.verticalAlign} style={{
       		height: '100%'
       }}>
+            <PageDisplayVenue />
+
+        </div>
+
+
+    );
         	{venueNameClean}
         	{venueAddressClean}
         	{contactNumberClean}
@@ -64,10 +70,6 @@ export default class PageDisplay extends React.Component {
         	{valetParkingClean}
         	{valetParkingPrice}
         	{valetParkingQuantity}
-        </div>
-
-
-    );
   }
 }
         // <div style={{
