@@ -3,9 +3,9 @@ import {Popover, Tooltip, Button, Modal, OverlayTrigger} from 'react-bootstrap'
 export default class WatsonModal extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-		showModal: false
-    };
+  //   this.state = {
+		// showModal: this.props.modalOpen
+  //   };
     this.close = this.close.bind(this)
     this.open = this.open.bind(this)
 
@@ -32,18 +32,8 @@ export default class WatsonModal extends React.Component {
     );
 
     return (
-      <div>
-        <p>Click to get the full Modal experience!</p>
-
-        <Button
-          bsStyle="primary"
-          bsSize="large"
-          onClick={this.open}
-        >
-          Launch demo modal
-        </Button>
-
-        <Modal show={this.state.showModal} onHide={this.close}>
+      <div onDoubleClick={this.open}>
+        <Modal show={this.props.showModal} onHide={this.close}>
           <Modal.Header closeButton>
             <Modal.Title>Modal heading</Modal.Title>
           </Modal.Header>

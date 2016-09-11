@@ -17,7 +17,6 @@ export default class VenueFooter extends React.Component {
       	<PdfButton />
       	<WatsonButton />
       	<SaveCancelButton />
-        <WatsonModal />
       </div>
     );
   }

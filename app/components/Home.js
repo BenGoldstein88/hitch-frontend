@@ -15,6 +15,7 @@ export default class Home extends React.Component {
     this.handleToolChange = this.handleToolChange.bind(this)
     this.handleEventChange = this.handleEventChange.bind(this)
     this.handleDisplayChange = this.handleDisplayChange.bind(this)
+    this.handlePayChange = this.handlePayChange.bind(this)
   }
 
   handleDisplayChange(display) {
@@ -50,11 +51,8 @@ export default class Home extends React.Component {
         backgroundSize: '101% 100%'
         }}>
       </div>
-<<<<<<< HEAD
-	    <AppMain onDisplayChange={this.handleDisplayChange} display={this.state.display} onToolChange={this.handleToolChange} tool={this.state.tool} onEventChange={this.handleEventChange} event={this.state.event} />
-=======
-	    <AppMain onToolChange={this.handleToolChange} tool={this.state.tool} onEventChange={this.handleEventChange} event={this.state.event} onPayChange={this.handlePayChange} pay={this.state.pay} />
->>>>>>> 709ee9fd74a17b552b501573c0b003be58841093
+
+	    <AppMain onDisplayChange={this.handleDisplayChange} display={this.state.display} onToolChange={this.handleToolChange} tool={this.state.tool} onEventChange={this.handleEventChange} event={this.state.event} onPayChange={this.handlePayChange} pay={this.state.pay} />
       </div>
     );
   }

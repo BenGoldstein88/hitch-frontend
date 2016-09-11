@@ -88,9 +88,6 @@ export default class VenueExpenses extends React.Component {
         fontFamily: 'Raleway'
       }}>
       	<h2 style={{fontFamily: 'Raleway', fontSize:'16px'}}> EXPENSES: </h2>
-      	<ExpenseItem />
-        <ExpenseItem />
-        <RentalItem />
 
         <ExpenseItem item={this.state.item1} price={this.state.price1} quantity={this.state.quantity1} total={this.state.total1}/>
         <ExpenseItem item={this.state.item2} price={this.state.price2} quantity={this.state.quantity2} total={this.state.total2}/>
