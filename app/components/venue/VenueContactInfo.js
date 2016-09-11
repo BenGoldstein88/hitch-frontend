@@ -32,7 +32,7 @@ export default class VenueContactInfo extends React.Component {
     }, 4000)
     setTimeout(function() {
       that.setState({
-        email: 'test@test.com'
+        email: 'NONE_FOUND'
       })
     }, 5000)
   }
