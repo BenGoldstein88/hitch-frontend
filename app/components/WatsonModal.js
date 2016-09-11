@@ -36,7 +36,7 @@ export default class WatsonModal extends React.Component {
       <div onDoubleClick={this.open}>
         <Modal show={this.props.showModal} onHide={this.close}>
           <Modal.Header closeButton>
-            <Modal.Title>Welcome to IBM Watson!</Modal.Title>
+            <Modal.Title>{this.props.header}</Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <h4>{this.props.title}</h4>

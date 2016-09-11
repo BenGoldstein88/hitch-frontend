@@ -115,7 +115,7 @@ export default class PageDisplayVenue extends React.Component {
     }
     return (
       <div onDoubleClick={this.handleDoubleClick} style={{height: '100%', width: '100%'}}>
-        <WatsonModal title='IBM Watson is here to help!' text='Hey! This all looks great. Would you like to go ahead and pay the deposit?' buttonText='Pay Deposit!' showModal={this.state.modal} onModalChange={this.handleModalChange} onClose={this.handleClose}/>
+        <WatsonModal header='Not so fast, whippersnappers!' title='IBM Watson is here to help!' text='Hey! This all looks great. Would you like to go ahead and pay the deposit?' buttonText='Pay Deposit!' showModal={this.state.modal} onModalChange={this.handleModalChange} onClose={this.handleClose}/>
       	<VenueHeader venueName={pdfMap.venueName} venueAddress={pdfMap.venueAddress}/>
       	<VenueLeftColumn contactName={pdfMap.contactName} contactNumber={pdfMap.contactNumber} watsonText={pdfMap.watsonText}/>
         <VenueRightColumn onPayChange={this.props.onHandlePayChange} pay={this.props.pay} mealPackagePrice={pdfMap.mealPackagePrice} mealPackageQuantity={pdfMap.mealPackageQuantity} valetParkingPrice={pdfMap.valetParkingPrice} valetParkingQuantity={pdfMap.valetParkingQuantity} venueRentalFee={pdfMap.venueRentalFee}/>
