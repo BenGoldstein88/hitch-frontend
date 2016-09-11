@@ -49,14 +49,23 @@ export default class PageDisplay extends React.Component {
 
 
     return (
+      <div className={styles.page.verticalAlign} style={{
+      		height: '73vh'
+      }}>
+        <div style={{
+          height: '100%',
+          margin: '50px 0px 75px 0px',
+          backgroundImage: 'url("../../app/images/maxiDiamond.png")',
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'contain'
+        }}>
+        </div>
+      </div>
         <div className={styles.page.verticalAlign} style={{
       		height: '100%'
-      }}>
-            <PageDisplayVenue />
-
+        }}>
+          <PageDisplayVenue />
         </div>
-
-
     );
         	{venueNameClean}
         	{venueAddressClean}
@@ -83,4 +92,4 @@ export default class PageDisplay extends React.Component {
 
       	// <Typist avgTypingDelay={10} stdTypingDelay={10}>
       	// 	{watsonText}
-      	// </Typist>	
+      	// </Typist>
