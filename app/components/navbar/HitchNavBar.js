@@ -10,7 +10,7 @@ export default class HitchNavBar extends React.Component {
 			<Navbar.Header>
 				<Navbar.Brand>
 					<Nav pullLeft>
-						<NavItem eventKey={'home'} onSelect={this.props.onSelect} href='#'>Stitch</NavItem>
+						<NavItem eventKey={'home'} onSelect={this.props.onSelect} href='#'>Hitch</NavItem>
 					</Nav>
 				</Navbar.Brand>
 				<Navbar.Toggle />
