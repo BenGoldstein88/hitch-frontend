@@ -10,9 +10,10 @@ export default class VenueExpenses extends React.Component {
       <div style={{
       	display: 'block',
       	width: '100%',
-        height: '50%'
+        height: '50%',
+        fontFamily: 'Raleway'
       }}>
-      	<h2> Expenses: </h2> 
+      	<h2 style={{fontFamily: 'Raleway'}}> EXPENSES: </h2>
       	<ExpenseItem />
         <ExpenseItem />
         <RentalItem />

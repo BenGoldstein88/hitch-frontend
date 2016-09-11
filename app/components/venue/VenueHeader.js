@@ -46,7 +46,8 @@ export default class VenueHeader extends React.Component {
     return (
       <div style={{
       	height: '12.5%',
-      	width: '100%'
+      	width: '100%',
+        fontFamily: 'Raleway'
       }}>
       	<input value={this.state.name}type='text' onChange={this.handleNameChange} style={{
       		background: 'transparent',
