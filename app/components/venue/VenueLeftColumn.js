@@ -2,7 +2,27 @@ import React from 'react';
 import VenueContactInfo from './VenueContactInfo'
 import VenueTerms from './VenueTerms'
 export default class VenueLeftColumn extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      text: ''
 
+    };
+    this.handleMount = this.handleMount.bind(this)
+  }
+    handleMount() {
+      var that = this
+      console.log('yay?')
+      setTimeout(function() {
+        that.setState({
+          text: that.props.watsonText
+        })
+      }, 200)      
+    }
+
+    componentDidMount() {
+      this.handleMount()
+    }
   render() {
     return (
       <div className='col-sm-6' style={{
@@ -10,7 +30,7 @@ export default class VenueLeftColumn extends React.Component {
         display: 'block'
       }}>
 	      <VenueContactInfo contactName={this.props.contactName} contactNumber={this.props.contactNumber}/>
-	      <VenueTerms />
+	      <VenueTerms text={this.state.text}/>
       	
       </div>
     );
