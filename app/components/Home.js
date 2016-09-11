@@ -1,30 +1,17 @@
-// import React, { Component, PropTypes } from 'react';
-
-// class Home extends Component {
-//     // static propTypes = {
-//     //     className: PropTypes.string
-//     // };
-
-//     // constructor(props) {
-//     //     super(props);
-//     // }
-
-//     render() {
-//         return (
-//           <div>Home now bitches!</div>
-//         );
-//     }
-// }
-
-// export default Home;
 import React from 'react';
+import HitchNavBar from './navbar/HitchNavBar'
+import AppMain from './AppMain';
 
 export default class Home extends React.Component {
 
-
   render() {
     return (
-      <h1>Home sweet home!</h1>
+
+      <div>
+      <HitchNavBar />
+      <AppMain />
+
+      </div>
     );
   }
 }
