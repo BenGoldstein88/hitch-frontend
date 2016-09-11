@@ -8,7 +8,13 @@ export default class VenueContactInfo extends React.Component {
       	display: 'block',
       	width: '100%'
       }}>
-      	Contact Info Stuff
+      	<h2>Contact Info: </h2>
+        <input type='text' style={{backgroundColor: 'pink', width: '75%', marginRight: '20%',
+        marginLeft: '10%'}} />
+        <input type='text' style={{backgroundColor: 'pink', width: '75%', marginRight: '20%',
+        marginLeft: '10%'}} />
+        <input type='text' style={{backgroundColor: 'pink', width: '85%',
+        marginLeft: '10%'}} />
       </div>
     );
   }

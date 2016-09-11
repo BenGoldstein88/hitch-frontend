@@ -47,12 +47,7 @@ export default class PageDisplay extends React.Component {
     var valetParkingPrice = valetParkingClean.substring(0,3)
     var valetParkingQuantity = valetParkingClean.substring(6)
 
-
-    return (
-      <div className={styles.page.verticalAlign} style={{
-      		height: '73vh'
-      }}>
-        <div style={{
+    var mainPage =    <div style={{
           height: '100%',
           margin: '50px 0px 75px 0px',
           backgroundImage: 'url("../../app/images/maxiDiamond.png")',
@@ -60,6 +55,14 @@ export default class PageDisplay extends React.Component {
           backgroundSize: 'contain'
         }}>
         </div>
+
+    var venuePage = <PageDisplayVenue />
+
+    return (
+      <div className={styles.page.verticalAlign} style={{
+          height: '73vh'
+      }}>
+        {venuePage}
       </div>
     );
   }
