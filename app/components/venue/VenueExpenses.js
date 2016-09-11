@@ -24,7 +24,6 @@ export default class VenueExpenses extends React.Component {
   }
   handleMount() {
     var that = this
-    console.log('yay?')
     setTimeout(function() {
       that.setState({
         item1: 'Meals'

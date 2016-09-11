@@ -11,7 +11,7 @@ export default class VenueNotes extends React.Component {
         height: '50%',
         fontFamily: 'Raleway',
       }}>
-      	<h2> Notes: </h2>
+      	<h2> NOTES: </h2>
         <input type='textArea' style={{
             background: 'rgba(254, 149, 125, 0.2)',
             width: '95%',
