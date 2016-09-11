@@ -32,7 +32,7 @@ export default class Home extends React.Component {
     return (
       <div>
       <div style={{
-        height: '120px',
+        height: '110px',
         backgroundImage: 'url("../../app/images/topBar.png")',
         backgroundRepeat: 'no-repeat',
         backgroundSize: '101% 100%'

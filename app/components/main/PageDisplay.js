@@ -54,11 +54,19 @@ export default class PageDisplay extends React.Component {
       }}>
         <div style={{
           height: '100%',
-          margin: '50px 0px 75px 0px',
+          margin: '50px 60px 75px 90px',
           backgroundImage: 'url("../../app/images/maxiDiamond.png")',
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'contain'
         }}>
+          <img src='../../app/images/commandIcon.png' alt="Watson Command Icon"
+            style={{
+              width: '10%',
+              position: 'relative',
+              float: 'right',
+              top: '85%'
+            }}
+          />
         </div>
         <div className={styles.page.verticalAlign} style={{
       		height: '100%'
