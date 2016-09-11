@@ -1,5 +1,5 @@
-var path = require('path')
-var webpack = require('webpack')
+// var path = require('path')
+// var webpack = require('webpack')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 var HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
   template: __dirname + '/app/index.html',
@@ -22,6 +22,7 @@ module.exports = {
       {
         test: /\.js?$/, exclude: /node_modules/,
         loaders: ['babel-loader']
+        // query: {plugins: 'react-html-attrs'}
       },
       {
         test: /\.css$/, loader: "style-loader!css-loader"
