@@ -177,7 +177,7 @@ export default class PageDisplay extends React.Component {
           height: '73vh',
           marginLeft: '-25px'
         }}>
-          <PageDisplayVenue onPayChange={this.props.onHandlePayChange} pay={this.props.pay}/>
+          <PageDisplayVenue onPayChange={this.props.onPayChange} pay={this.props.pay}/>
         </div>
       );
 

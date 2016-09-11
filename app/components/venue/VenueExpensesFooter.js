@@ -8,8 +8,12 @@ export default class VenueExpensesFooter extends React.Component {
 		}
 	}
 
+	handleDoubleClick(e) {
+		this.props.onPayChange()
+	}
+
 	enableButton() {
-		if (this.state.pay) {
+		if (this.props.pay) {
 			<Button style={{float: 'left', marginBottom: '2%', width: '22.5%'}} bsStyle='success'>Pay</Button>
 		} else {
 			<Button style={{float: 'left', marginBottom: '2%', width: '22.5%'}} bsStyle='default' disabled>Pay</Button>
@@ -18,7 +22,7 @@ export default class VenueExpensesFooter extends React.Component {
 
   render() {
   	let payButton;
-  	if (this.state.pay) {
+  	if (this.props.pay) {
 			payButton = <Button style={{float: 'left', marginBottom: '2%', width: '22.5%'}} bsStyle='success'>Pay</Button>
 		} else {
 			payButton = <Button style={{float: 'left', marginBottom: '2%', width: '22.5%'}} bsStyle='default' disabled>Pay</Button>
@@ -26,7 +30,7 @@ export default class VenueExpensesFooter extends React.Component {
 
 
     return (
-      <div style={{height: '20%'}}>
+      <div onDoubleClick={this.handleDoubleClick} style={{height: '20%'}}>
       	{payButton}
       	TOTAL EXPENSES:
       	<input value={this.props.total} type='text' style={{background: 'rgba(254, 149, 125, 0.2)'}} />

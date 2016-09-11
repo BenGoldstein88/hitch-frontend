@@ -37,7 +37,7 @@ export default class Home extends React.Component {
 
   handlePayChange() {
     this.setState({
-      pay: true
+      pay: !this.state.pay
     })
   }
 

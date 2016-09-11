@@ -12,12 +12,12 @@ export default class WatsonModal extends React.Component {
   }
 
   close() {
-    this.setState({ showModal: false });
+    // this.setState({ showModal: false });
     this.props.onModalChange()
   }
 
   open() {
-    this.setState({ showModal: true });
+    // this.setState({ showModal: true });
   }
 
   render() {
@@ -39,12 +39,12 @@ export default class WatsonModal extends React.Component {
             <Modal.Title>Welcome to IBM Watson!</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <h4>Start a Conversation!</h4>
-            <p>(Perhaps you would like to do something...like upload a proposal?)</p>
+            <h4>{this.props.title}</h4>
+            <p>{this.props.text}</p>
 
           </Modal.Body>
           <Modal.Footer>
-            <Button onClick={this.close}>Close</Button>
+            <Button onClick={this.props.onClose}>{this.props.buttonText}</Button>
           </Modal.Footer>
         </Modal>
       </div>

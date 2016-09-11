@@ -18,6 +18,7 @@ export default class PageDisplayMain extends React.Component {
     this.setState({
       modal: !this.state.modal
     })
+    this.props.onDisplayChange('venue')
   }
   handleDoubleClick(e){
     // this.setState({isClicked: !this.state.isClicked})
@@ -40,7 +41,7 @@ export default class PageDisplayMain extends React.Component {
         <div className={styles.page.verticalAlign} style={{
             height: '73vh'
         }}>
-        <WatsonModal showModal={this.state.modal} onModalChange={this.handleModalChange}/>
+        <WatsonModal title='Welcome to IBM Watson!' text='I noticed you have received a proposal that is not yet saved on disc. Would you like to upload and analyze the proposal?' buttonText='Upload Proposal (PDF)' showModal={this.state.modal} onModalChange={this.handleModalChange} onClose={this.handleModalChange}/>
           <div onDoubleClick={this.handleDoubleClick} style={{
             height: '100%',
             margin: '50px 60px 75px 90px',
