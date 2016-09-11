@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from '../../styles/indexStyles';
 
 export default class SuggestionsBox extends React.Component {
   render() {
