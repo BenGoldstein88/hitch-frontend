@@ -68,24 +68,8 @@ export default class PageDisplay extends React.Component {
             }}
           />
         </div>
-        <div className={styles.page.verticalAlign} style={{
-      		height: '100%'
-        }}>
-          <PageDisplayVenue />
-        </div>
       </div>
     );
-        	{venueNameClean}
-        	{venueAddressClean}
-        	{contactNumberClean}
-        	{contactNameClean}
-        	{initialDepositClean}
-        	{venueRentalFeeClean}
-        	{mealPackageClean}
-        	{mealPackagePrice}
-        	{mealPackageQuantity}
-        	{valetParkingClean}
-        	{valetParkingPrice}
-        	{valetParkingQuantity}
   }
 }
+

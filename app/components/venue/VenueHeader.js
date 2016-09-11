@@ -5,7 +5,7 @@ export default class VenueHeader extends React.Component {
   render() {
     return (
       <div style={{
-      	height: '15%',
+      	height: '20%',
       	width: '100%'
       }}>
       	<input type='text' style={{
