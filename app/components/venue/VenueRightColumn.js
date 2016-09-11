@@ -11,7 +11,7 @@ export default class VenueRightColumn extends React.Component {
         display: 'block'
 
       }}>
-      	<VenueExpenses />
+      	<VenueExpenses mealPackagePrice={this.props.mealPackagePrice} mealPackageQuantity={this.props.mealPackageQuantity} valetParkingPrice={this.props.valetParkingPrice} valetParkingQuantity={this.props.valetParkingQuantity} venueRentalFee={this.props.venueRentalFee}/>
       	<VenueNotes />
       </div>
     );
