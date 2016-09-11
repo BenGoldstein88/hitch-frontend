@@ -12,7 +12,7 @@ export default class VenueTerms extends React.Component {
       }}>
 
       	<h2> Terms & Proposals: </h2>
-      	<input type='textArea' style={{background: 'pink', height: '100%', width: '100%'
+      	<input value={this.props.text} type='textArea' style={{background: 'pink', height: '100%', width: '100%', wrap: 'hard', cols: '2'
         }} />
       </div>
     );

@@ -8,7 +8,7 @@ export default class VenueExpensesFooter extends React.Component {
       <div style={{height: '20%'}}>
       	<Button style={{float: 'left', marginBottom: '2%', width: '22.5%'}}bsStyle='default'>Pay</Button> 
       	Total Expenses: 
-      	<input type='text' style={{backgroundColor: 'pink'}} />
+      	<input value={this.props.total} type='text' style={{backgroundColor: 'pink'}} />
       </div>
     );
   }

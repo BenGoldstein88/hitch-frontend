@@ -7,7 +7,7 @@ export default class RentalItem extends React.Component {
     return (
       <div style={{display: 'block', marginBottom: '.5%', height: '20%'
 }}>
-        <input type='text' style={{
+        <input value='Rental Fee' type='text' style={{
       		display: 'inline-block',
       		width: '59%',
       		backgroundColor: 'pink'
@@ -19,7 +19,7 @@ export default class RentalItem extends React.Component {
       		width: '3.5%'
       	}} />
       	=
-       	<input type='text' style={{
+       	<input value={this.props.price} type='text' style={{
       		display: 'inline-block',
       		width: '30%',
       		backgroundColor: 'pink'
