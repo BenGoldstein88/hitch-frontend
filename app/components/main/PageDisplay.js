@@ -3,22 +3,33 @@ import styles from '../../styles/indexStyles'
 // import FileUploadForm from '../venue/FileUploadForm'
 import Typist from 'react-typist';
 import PageDisplayVenue from './PageDisplayVenue'
+import PageDisplayMain from './PageDisplayMain'
+
 export default class PageDisplay extends React.Component {
-  constructor() {
-    super();
-    this.handleClick = this.handleClick.bind(this);
-    this.state = {
-      isClicked: false
-    }
-  }
+  // constructor() {
+  //   super();
+  //   this.handleClick = this.handleClick.bind(this);
+  //   this.state = {
+  //     display: 'home'
+  //   }
+  // }
 
-  handleClick(){
-    this.setState({isClicked: !this.state.isClicked})
-  }
+  // handleClick(){
+  //     if (this.state.display == 'home')
+  //       this.setState({
+  //         display: 'modal'
+  //       })
+  //     else if(this.state.display == 'venue') {
 
-  componentDidMount(){
-    window.addEventListener('click', this.handleClick);
-  }
+  //     } else {
+
+  //     }
+  //   this.setState({isClicked: !this.state.isClicked})
+  // }
+
+  // componentDidMount(){
+  //   window.addEventListener('click', this.handleClick);
+  // }
 
 
   render() {
@@ -64,96 +75,112 @@ export default class PageDisplay extends React.Component {
     let valetParkingPrice = valetParkingClean.substring(0,3)
     let valetParkingQuantity = valetParkingClean.substring(6)
 
-    if (this.state.isClicked === false) {
+    // if (this.state.isClicked === false) {
+    //   return (
+    //     <div className={styles.page.verticalAlign} style={{
+    //     		height: '73vh'
+    //     }}>
+    //       <div style={{
+    //         height: '100%',
+    //         margin: '50px 60px 75px 90px',
+    //         backgroundImage: 'url("../../app/images/maxiDiamond.png")',
+    //         backgroundRepeat: 'no-repeat',
+    //         backgroundSize: 'contain'
+    //       }}>
+    //         <p style={{
+    //           top: '-25px',
+    //           left: '78px',
+    //           display: 'inline',
+    //           position: 'relative',
+    //           fontFamily: '"Raleway", sans-serif'
+    //         }}>WEDDING PARTY</p>
+    //         <p style={{
+    //           top: '-25px',
+    //           left: '275px',
+    //           display: 'inline',
+    //           position: 'relative',
+    //           fontFamily: '"Raleway", sans-serif'
+    //         }}>GUESTS</p>
+    //         <p style={{
+    //           top: '145px',
+    //           right: '230px',
+    //           display: 'inline',
+    //           position: 'relative',
+    //           fontFamily: '"Raleway", sans-serif'
+    //         }}>DETAILS</p>
+    //         <p style={{
+    //           top: '145px',
+    //           left: '330px',
+    //           display: 'inline',
+    //           position: 'relative',
+    //           fontFamily: '"Raleway", sans-serif'
+    //         }}>LOCATION</p>
+    //         <p style={{
+    //           top: '495px',
+    //           right: '55px',
+    //           display: 'inline',
+    //           position: 'relative',
+    //           fontFamily: '"Raleway", sans-serif'
+    //         }}>VENDORS</p>
+    //         <p style={{
+    //           top: '245px',
+    //           left: '330px',
+    //           display: 'inline',
+    //           position: 'absolute',
+    //           fontFamily: '"Raleway", sans-serif',
+    //           fontSize: '2em'
+    //         }}>ALYSSA</p>
+    //         <p style={{
+    //           top: '285px',
+    //           left: '370px',
+    //           display: 'inline',
+    //           position: 'absolute',
+    //           fontFamily: '"Raleway", sans-serif',
+    //           fontSize: '2em'
+    //         }}>&</p>
+    //         <p style={{
+    //           top: '325px',
+    //           left: '350px',
+    //           display: 'inline',
+    //           position: 'absolute',
+    //           fontFamily: '"Raleway", sans-serif',
+    //           fontSize: '2em'
+    //         }}>DAN</p>
+    //         <img src='../../app/images/commandIcon.png' alt="Watson Command Icon"
+    //           style={{
+    //             width: '10%',
+    //             position: 'relative',
+    //             float: 'right',
+    //             top: '85%'
+    //           }}
+    //         />
+    //       </div>
+    //     </div>
+    //   );
+    // } else {
+    //   return (
+    //     <div className={styles.page.verticalAlign} style={{
+    //       height: '73vh'
+    //     }}>
+    //       <PageDisplayVenue />
+    //     </div>
+    //   );
+    console.log(this.props.display)
+    if(this.props.display == 'home') {
       return (
-        <div className={styles.page.verticalAlign} style={{
-        		height: '73vh'
-        }}>
-          <div style={{
-            height: '100%',
-            margin: '50px 60px 75px 90px',
-            backgroundImage: 'url("../../app/images/maxiDiamond.png")',
-            backgroundRepeat: 'no-repeat',
-            backgroundSize: 'contain'
-          }}>
-            <p style={{
-              top: '-25px',
-              left: '78px',
-              display: 'inline',
-              position: 'relative',
-              fontFamily: '"Raleway", sans-serif'
-            }}>WEDDING PARTY</p>
-            <p style={{
-              top: '-25px',
-              left: '275px',
-              display: 'inline',
-              position: 'relative',
-              fontFamily: '"Raleway", sans-serif'
-            }}>GUESTS</p>
-            <p style={{
-              top: '145px',
-              right: '230px',
-              display: 'inline',
-              position: 'relative',
-              fontFamily: '"Raleway", sans-serif'
-            }}>DETAILS</p>
-            <p style={{
-              top: '145px',
-              left: '330px',
-              display: 'inline',
-              position: 'relative',
-              fontFamily: '"Raleway", sans-serif'
-            }}>LOCATION</p>
-            <p style={{
-              top: '495px',
-              right: '55px',
-              display: 'inline',
-              position: 'relative',
-              fontFamily: '"Raleway", sans-serif'
-            }}>VENDORS</p>
-            <p style={{
-              top: '245px',
-              left: '330px',
-              display: 'inline',
-              position: 'absolute',
-              fontFamily: '"Raleway", sans-serif',
-              fontSize: '2em'
-            }}>ALYSSA</p>
-            <p style={{
-              top: '285px',
-              left: '370px',
-              display: 'inline',
-              position: 'absolute',
-              fontFamily: '"Raleway", sans-serif',
-              fontSize: '2em'
-            }}>&</p>
-            <p style={{
-              top: '325px',
-              left: '350px',
-              display: 'inline',
-              position: 'absolute',
-              fontFamily: '"Raleway", sans-serif',
-              fontSize: '2em'
-            }}>DAN</p>
-            <img src='../../app/images/commandIcon.png' alt="Watson Command Icon"
-              style={{
-                width: '10%',
-                position: 'relative',
-                float: 'right',
-                top: '85%'
-              }}
-            />
-          </div>
-        </div>
-      );
+        <PageDisplayMain display={this.props.display} onDisplayChange={this.props.onDisplayChange} onToolChange={this.props.onToolChange} tool={this.props.tool} onEventChange={this.props.onEventChange} event={this.props.event}/>
+        )
     } else {
       return (
+
         <div className={styles.page.verticalAlign} style={{
-          height: '73vh'
+          height: '73vh',
+          marginLeft: '-25px'
         }}>
-          <PageDisplayVenue />
+          <PageDisplayVenue onPayChange={this.props.onPayChange} pay={this.props.pay}/>
         </div>
       );
+
     }
   }
 }

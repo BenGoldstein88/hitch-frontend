@@ -3,8 +3,46 @@ import VenueHeader from '../venue/VenueHeader'
 import VenueLeftColumn from '../venue/VenueLeftColumn'
 import VenueRightColumn from '../venue/VenueRightColumn'
 import VenueFooter from '../venue/VenueFooter'
-
+import WatsonModal from '../WatsonModal'
 export default class PageDisplayVenue extends React.Component {
+   constructor(props) {
+    super(props);
+    this.handleDoubleClick = this.handleDoubleClick.bind(this);
+    this.handleModalChange = this.handleModalChange.bind(this);
+
+    this.openModal = this.openModal.bind(this)
+    this.handleClose = this.handleClose.bind(this)
+    this.state = {
+      modal: false
+    }
+  }
+
+  handleClose() {
+    this.props.onPayChange()
+    this.setState({
+      modal: !this.state.modal
+    })
+  }
+
+  handleModalChange() {
+    this.setState({
+      modal: !this.state.modal
+    })
+    // this.props.onDisplayChange('venue')
+  }
+  handleDoubleClick(e){
+    // this.setState({isClicked: !this.state.isClicked})
+    // this.props.onDisplayChange('venue')
+    console.log('clicked!')
+    this.openModal()
+  }
+
+  openModal() {
+    console.log('wtfff?')
+    this.setState({
+      modal: true
+    })
+  }
 
   render() {
 
@@ -46,7 +84,7 @@ export default class PageDisplayVenue extends React.Component {
     var mealPackageQuantity = mealPackageClean.substring(7)
 
     var valetParking = watsonTextClean.match(/Valet\sParking.+?(?=(3.\s))/).toString()
-    var valetParkingClean = valetParking.substring(14, 22)
+    var valetParkingClean = valetParking.substring(14, 23)
     var valetParkingPrice = valetParkingClean.substring(0,3)
     var valetParkingQuantity = valetParkingClean.substring(6)
           // {venueNameClean}
@@ -76,10 +114,11 @@ export default class PageDisplayVenue extends React.Component {
 
     }
     return (
-      <div style={{height: '100%', width: '100%'}}>
+      <div onDoubleClick={this.handleDoubleClick} style={{height: '100%', width: '100%'}}>
+        <WatsonModal header='Not so fast, whippersnappers!' title='IBM Watson is here to help!' text='Hey! This all looks great. Would you like to go ahead and pay the deposit?' buttonText='Pay Deposit!' showModal={this.state.modal} onModalChange={this.handleModalChange} onClose={this.handleClose}/>
       	<VenueHeader venueName={pdfMap.venueName} venueAddress={pdfMap.venueAddress}/>
       	<VenueLeftColumn contactName={pdfMap.contactName} contactNumber={pdfMap.contactNumber} watsonText={pdfMap.watsonText}/>
-        <VenueRightColumn mealPackagePrice={pdfMap.mealPackagePrice} mealPackageQuantity={pdfMap.mealPackageQuantity} valetParkingPrice={pdfMap.valetParkingPrice} valetParkingQuantity={pdfMap.valetParkingQuantity} venueRentalFee={pdfMap.venueRentalFee}/>
+        <VenueRightColumn onPayChange={this.props.onHandlePayChange} pay={this.props.pay} mealPackagePrice={pdfMap.mealPackagePrice} mealPackageQuantity={pdfMap.mealPackageQuantity} valetParkingPrice={pdfMap.valetParkingPrice} valetParkingQuantity={pdfMap.valetParkingQuantity} venueRentalFee={pdfMap.venueRentalFee}/>
         <VenueFooter />
       </div>
     );
