@@ -4,7 +4,6 @@ import AppMain from './AppMain';
 
 export default class Home extends React.Component {
 
-
   constructor(props) {
     super(props);
     this.state = {
@@ -32,11 +31,15 @@ export default class Home extends React.Component {
   render() {
     return (
       <div>
-	      <HitchNavBar onToolChange={this.handleToolChange} tool={this.state.tool} onEventChange={this.handleEventChange} event={this.state.event} />
-	      <AppMain onToolChange={this.handleToolChange} tool={this.state.tool} onEventChange={this.handleEventChange} event={this.state.event} />
-
+      <div style={{
+        height: '120px',
+        backgroundImage: 'url("../../app/images/topBar.png")',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: '101% 100%'
+        }}>
+      </div>
+	    <AppMain onToolChange={this.handleToolChange} tool={this.state.tool} onEventChange={this.handleEventChange} event={this.state.event} />
       </div>
     );
   }
 }
-
