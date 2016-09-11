@@ -9,7 +9,7 @@ export default class SideBarDisplay extends React.Component {
     return (
       <div className={styles.sideBar.verticalAlign}>
         <div style={{
-          height: '82vh',
+          height: '100%',
           marginLeft: '-15px',
           backgroundImage: 'url("../../app/images/sidebar.png")',
           backgroundRepeat: 'no-repeat',

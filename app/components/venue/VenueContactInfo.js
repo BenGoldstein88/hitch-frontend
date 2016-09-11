@@ -6,7 +6,8 @@ export default class VenueContactInfo extends React.Component {
     return (
       <div style={{
       	display: 'block',
-      	width: '100%'
+      	width: '100%',
+        height: '40%'
       }}>
       	<h2>Contact Info: </h2>
         <input type='text' style={{backgroundColor: 'pink', width: '75%', marginRight: '20%',

@@ -6,7 +6,8 @@ export default class VenueLeftColumn extends React.Component {
   render() {
     return (
       <div className='col-sm-6' style={{
-      	height: '75%'
+      	height: '74%',
+        display: 'block'
       }}>
 	      <VenueContactInfo />
 	      <VenueTerms />

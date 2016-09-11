@@ -11,7 +11,7 @@ export default class VenueTerms extends React.Component {
 
       }}>
 
-      	<h2> Terms and Proposals </h2>
+      	<h2> Terms & Proposals: </h2>
       	<input type='textArea' style={{background: 'pink', height: '100%', width: '100%'
         }} />
       </div>
