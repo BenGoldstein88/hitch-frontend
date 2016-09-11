@@ -8,8 +8,11 @@ const styles = {
   suggestionBox: {
     verticalAlign: "col-m-3",
     horizontal: "form-horizontal"
+  },
+  venueTop: {
+    textAlign: "center-block"
   }
 }
 
 export default styles
- 
+

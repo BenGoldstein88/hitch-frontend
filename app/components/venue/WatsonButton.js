@@ -6,7 +6,11 @@ export default class WatsonButton extends React.Component {
   render() {
     return (
       <div className='col-md-4'>
-      	WATSONBUTTON
+      	<img src='../../app/images/commandIcon.png' alt="Watson Command Icon"
+          style={{
+            width: '20%',
+          }}
+        />
       </div>
     );
   }
