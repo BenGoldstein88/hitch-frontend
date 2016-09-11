@@ -60,12 +60,12 @@ export default class PageDisplay extends React.Component {
           backgroundSize: 'contain'
         }}>
         </div>
-      </div>
         <div className={styles.page.verticalAlign} style={{
       		height: '100%'
         }}>
           <PageDisplayVenue />
         </div>
+      </div>
     );
         	{venueNameClean}
         	{venueAddressClean}
@@ -81,15 +81,3 @@ export default class PageDisplay extends React.Component {
         	{valetParkingQuantity}
   }
 }
-        // <div style={{
-        //   height: '100vh',
-        //   margin: '50px 0px 75px 0px',
-        //   backgroundImage: 'url("../../app/images/maxiDiamond.png")',
-        //   backgroundRepeat: 'no-repeat',
-        //   backgroundSize: 'contain'
-        // }}>
-      	// </div>
-
-      	// <Typist avgTypingDelay={10} stdTypingDelay={10}>
-      	// 	{watsonText}
-      	// </Typist>
