@@ -1,15 +1,15 @@
 import React from 'react';
 
-export default class VenueTerms extends React.Component {
+export default class VenueExpenses extends React.Component {
 
   render() {
     return (
       <div style={{
       	display: 'block',
-        width: '100%'
+      	width: '100%'
       }}>
       	
-      	Venue Terms and Stuff
+      	Venue Expenses
       </div>
     );
   }
