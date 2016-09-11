@@ -3,7 +3,11 @@ import React from 'react';
 export default class SiteMapIcon extends React.Component {
   render() {
     return (
-      <div>Site Map Icon</div>
+      <div style={{
+      	border: '1px red solid',
+      	height: '33.3%',
+      	marginTop: '.5%'
+      }}>Site Map Icon</div>
     );
   }
 }

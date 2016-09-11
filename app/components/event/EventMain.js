@@ -6,8 +6,8 @@ export default class EventMain extends React.Component {
   render() {
     return (
       <div>
-      <EventNavBar />
-      <Page />
+      <EventNavBar onToolChange={this.props.onToolChange} tool={this.props.tool} onEventChange={this.props.onEventChange} event={this.props.event}/>
+      <Page onToolChange={this.props.onToolChange} tool={this.props.tool} onEventChange={this.props.onEventChange} event={this.props.event}/>
       </div>
     );
   }
