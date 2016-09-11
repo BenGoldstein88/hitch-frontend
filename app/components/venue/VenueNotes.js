@@ -7,9 +7,15 @@ export default class VenueNotes extends React.Component {
     return (
       <div style={{
       	display: 'block',
-      	width: '100%'
+      	width: '100%',
+        height: '50%'
       }}>
-      	Venue Notes Box
+      	<h2> Notes: </h2>
+        <input type='textArea' style={{
+            backgroundColor: 'pink',
+            width: '95%',
+            height: '100%'
+        }} />
       </div>
     );
   }

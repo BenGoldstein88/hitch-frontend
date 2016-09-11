@@ -8,8 +8,9 @@ export default class VenueFooter extends React.Component {
   render() {
     return (
       <div style={{
-      	height: '20%',
-      	width: '100%'
+      	height: '12.5%',
+      	width: '100%',
+        float: 'bottom'
       }}>
       	<PdfButton />
       	<WatsonButton />

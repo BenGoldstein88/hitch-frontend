@@ -1,22 +1,27 @@
 import React from 'react';
 
-export default class RentalItem extends React.Component {
+export default class ExpenseItem extends React.Component {
 
 
   render() {
     return (
-      <div style={{display: 'block', marginBottom: '.5%', height: '20%'
-}}>
+      <div style={{display: 'block', marginBottom: '.5%', height: '20%'}}>
         <input type='text' style={{
       		display: 'inline-block',
-      		width: '59%',
+      		width: '30%',
       		backgroundColor: 'pink'
       	}} />
+
       	<input type='text' style={{
       		display: 'inline-block',
-      		background: 'transparent',
-      		border: 'none',
-      		width: '3.5%'
+      		width: '15%',
+      		backgroundColor: 'pink'
+      	}} />
+      	X
+      	<input type='text' style={{
+      		display: 'inline-block',
+      		width: '15%',
+      		backgroundColor: 'pink'
       	}} />
       	=
        	<input type='text' style={{

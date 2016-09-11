@@ -157,4 +157,3 @@ export default class PageDisplay extends React.Component {
     }
   }
 }
-

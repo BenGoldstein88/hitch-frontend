@@ -5,10 +5,11 @@ const styles = {
   page: {
     verticalAlign: "col-sm-9"
   },
-  suggiestionBox: {
+  suggestionBox: {
     verticalAlign: "col-m-3",
     horizontal: "form-horizontal"
   }
 }
 
 export default styles
+ 
